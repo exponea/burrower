@@ -62,7 +62,7 @@ class OffsetMonitor (
   writer: Writer
 ) extends Runnable with LazyLogging {
 
-  val burrowBaseUrl = f"http://$burrowHost:$burrowPort/v2/kafka"
+  val burrowBaseUrl = f"http://$burrowHost:$burrowPort/v3/kafka"
 
   def run(): Unit = {
     while (true) {
